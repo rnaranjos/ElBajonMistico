@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/elbajonmistico"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/codigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#DB6FED"
+        android:ems="10"
+        android:hint="@string/codigo"
+        android:inputType="number"
+        android:textColor="#F7070707"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#DB6FED"
+        android:hint="@string/nombre"
+        android:textColor="#F7070707"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/codigo"
+        app:layout_constraintTop_toBottomOf="@+id/codigo" />
+
+    <EditText
+        android:id="@+id/precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#DB6FED"
+        android:ems="10"
+        android:hint="@string/precio"
+        android:inputType="number"
+        android:textColor="#F7070707"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/nombre"
+        app:layout_constraintTop_toBottomOf="@+id/nombre" />
+
+    <EditText
+        android:id="@+id/ingredientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#DB6FED"
+        android:hint="@string/ingredientes"
+        android:textColor="#F7070707"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/precio"
+        app:layout_constraintTop_toBottomOf="@+id/precio" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/crearProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#09F112"
+            android:backgroundTint="#0FCFBD"
+            android:hint="@string/crearProducto"
+            android:onClick="crearProducto"
+            android:textColor="#FAF6F6"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/buscarProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFEB3B"
+            android:hint="@string/buscarProducto"
+            android:onClick="buscarProducto"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/eliminarProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F80505"
+            android:hint="@string/eliminarProducto"
+            android:onClick="eliminarProducto"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/modificarProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#092EFA"
+            android:hint="@string/modificarProducto"
+            android:onClick="modificarProducto"
+            android:textSize="24sp" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ElBajonMistico</string>
+    <string name="crearProducto">Crear producto</string>
+    <string name="buscarProducto">Buscar producto</string>
+    <string name="eliminarProducto">Eliminar producto</string>
+    <string name="modificarProducto">Modificar producto</string>
+    <string name="codigo">Ingresar código producto</string>
+    <string name="nombre">Ingresar nombre producto</string>
+    <string name="precio">Ingresar precio producto</string>
+    <string name="ingredientes">Ingresar sus ingredientes</string>
+</resources>
